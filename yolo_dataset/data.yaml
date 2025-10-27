@@ -1,0 +1,11 @@
+# YOLO Dataset Configuration
+path: C:\Users\andre\metrized\weld-segmentation\yolo_dataset
+train: images/train
+val: images/val
+
+# Classes
+names:
+  0: weld
+
+# Number of classes
+nc: 1

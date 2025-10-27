@@ -1,0 +1,28 @@
+# YOLO Weld Segmentation Requirements
+# Compatible with CUDA 12.9
+
+# Core Dependencies
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# YOLO and Computer Vision
+ultralytics>=8.0.0
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Training Monitoring (Optional but Recommended)
+tensorboard>=2.14.0
+
+# Utilities
+pyyaml>=6.0
+tqdm>=4.65.0
