@@ -12,7 +12,7 @@ def train_yolo_segmentation():
     # Load a pretrained YOLOv8 segmentation model
     # Options: yolov8n-seg.pt (nano), yolov8s-seg.pt (small), 
     #          yolov8m-seg.pt (medium), yolov8l-seg.pt (large), yolov8x-seg.pt (xlarge)
-    model = YOLO('yolov8n-seg.pt')  # Start with nano for faster training
+    model = YOLO('yolov8s-seg.pt')  # Start with nano for faster training
     
     # Train the model
     results = model.train(
@@ -29,7 +29,7 @@ def train_yolo_segmentation():
         exist_ok=True,                   # Overwrite existing experiment
         pretrained=True,                 # Use pretrained weights
         optimizer='Adam',                # Optimizer (Adam, SGD, AdamW)
-        lr0=0.01,                        # Initial learning rate
+        lr0=0.001,                        # Initial learning rate
         lrf=0.01,                        # Final learning rate factor
         momentum=0.937,                  # SGD momentum
         weight_decay=0.0005,             # Weight decay

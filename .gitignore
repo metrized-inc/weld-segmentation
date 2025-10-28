@@ -1,3 +1,6 @@
 venv
 data-top/
 data-bottom/
+runs/
+yolo_dataset/
+*.pt

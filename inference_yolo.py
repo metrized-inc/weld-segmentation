@@ -154,7 +154,7 @@ def example_batch_inference():
     predictor = WeldSegmentationInference()
     
     # Update with your directory path
-    img_dir = "data-top/"
+    img_dir = "data-bottom/"
     results = predictor.predict_directory(img_dir, conf_threshold=0.25)
     
     print(f"\nProcessed {len(results)} images")
@@ -162,7 +162,7 @@ def example_batch_inference():
 
 if __name__ == "__main__":
     # Run single image inference
-    example_single_image()
+    # example_single_image()
     
     # Or run batch inference
-    # example_batch_inference()
+    example_batch_inference()
